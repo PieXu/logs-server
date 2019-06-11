@@ -11,7 +11,7 @@
 		</div>
 		<div class="layui-body">
 			<div class="query_area">
-			    用户名： <div class="layui-inline query-div"><input class="layui-input" id="nameprama" autocomplete="off"></div>
+			    应用名： <div class="layui-inline query-div"><input class="layui-input" id="nameprama" autocomplete="off"></div>
 			    登录账号： <div class="layui-inline query-div"><input class="layui-input" id="loginnameparam" autocomplete="off"></div>
 			  <button class="layui-btn radius" id="search" data-type="reload">查  询</button>
 			</div>
@@ -25,7 +25,7 @@
 	<form id="user_form" class="layui-form" method="post" action="">
 		 <input type="hidden" name="id" id="id" value=""/>
 		 <div class="layui-form-item">
-		    <label class="layui-form-label">用户名</label>
+		    <label class="layui-form-label">应用名</label>
 		    <div class="layui-input-block">
 		      <input type="text" name="name" id="name" lay-verify="title" autocomplete="off" placeholder="请输入用户名" class="layui-input">
 		    </div>
@@ -81,7 +81,7 @@
 		  ,cols: [
 		  [
 			 {type:'checkbox'}
-		    ,{field: 'name', title: '用户名',width:120}
+		    ,{field: 'name', title: '应用名',width:120}
 		    ,{field: 'loginName', title: '登录账号',width:120}
 		    ,{field: 'status', sort:true, title: '状态',width:120,align:'center',templet:function(d){if(d.status=='NORMAL'){return '正常'}else{return '冻结'}}}
 		    ,{field: 'authCode', title: '授权码',width:240}
