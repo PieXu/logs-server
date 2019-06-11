@@ -65,7 +65,7 @@ public class WebController {
 							session.setAttribute(Constants.SESSION_USER_KEY, user);
 							session.setAttribute("username", user.getName());
 							session.setAttribute("isSuper", user.getIsSuper());
-							session.setAttribute("_userId", user.getId());
+							session.setAttribute("_user_auth_code", user.getAuthCode());
 							result.setResult(ResultObject.OPERATE_RESULT.success.toString());
 						}else{
 							result.setResult(ResultObject.OPERATE_RESULT.fail.toString());

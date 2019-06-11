@@ -35,6 +35,7 @@ public class AuditLog implements Serializable {
 	private String auditType;// 类型
 	private String remark;// 操作的结果
 	private Date createTime;
+	private String authCode;
 
 	public String getId() {
 		return id;
@@ -155,4 +156,13 @@ public class AuditLog implements Serializable {
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
+
+	public String getAuthCode() {
+		return authCode;
+	}
+
+	public void setAuthCode(String authCode) {
+		this.authCode = authCode;
+	}
+	
 }
