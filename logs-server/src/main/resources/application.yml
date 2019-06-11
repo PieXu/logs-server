@@ -1,0 +1,36 @@
+server:
+  port: 8099
+  tomcat: 
+    uri-encoding: UTF-8
+  
+spring: 
+  application:
+    name: Logs Server
+  themleaf: 
+    suffix: .html
+    encoding: utf-8
+    cache: false
+    mode: LEGACYHTML5
+    
+  datasource: 
+    type: com.easysoft.commons.db.EasySoftDataSource
+    driver-class: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/upload?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root 
+    
+  http: 
+    encoding: 
+      force: true
+      enabled: true
+      charset: UTF-8
+
+easysoft: 
+  log: 
+    server: 
+      port: 9009
+      bossThreads: 1
+      workerThreads: 20
+      keepalive: true
+      backlog: 2048
+      loglevel: debug
